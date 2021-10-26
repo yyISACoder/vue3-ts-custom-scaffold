@@ -1,0 +1,29 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "module": "esnext",
+    "sourceMap": true,
+    "target": "esnext",
+    "strict": true,
+    "lib": [
+      "dom",
+      "esnext",
+      "es2015.promise"
+    ]
+  }
+}
