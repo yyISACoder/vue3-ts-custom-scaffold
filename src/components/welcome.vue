@@ -10,7 +10,8 @@
 
 <script lang="ts">
 import { useStore } from 'vuex'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
+import request from '@/utils/request'
 import avatar from '@/assets/images/avatar.jpg'
 
 export default {
@@ -22,6 +23,11 @@ export default {
   },
   setup() {
     const store = useStore()
+
+    onMounted(async () => {
+      const res = await request('scaffold')
+      console.log(res)
+    })
 
     return {
       githubLink: computed(() => store.state.githubLink),

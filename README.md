@@ -10,7 +10,8 @@
 7. 支持 **typescript**
 8. 集成了 **vue-router4** 
 9. 集成了 **vuex4**
-10. 集成lint-staged、husky、commitlint、eslint、prettier工具链，用于规范代码风格与提高代码质量
+10. 集成 **axios**
+11. 集成lint-staged、husky、commitlint、eslint、prettier工具链，用于规范代码风格与提高代码质量
 
 ## 使用
 1. **yarn dev** 开发
